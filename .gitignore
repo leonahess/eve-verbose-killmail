@@ -1,0 +1,5 @@
+dist
+build
+MANIFEST
+*__pycache__
+.idea
