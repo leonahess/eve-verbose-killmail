@@ -979,6 +979,7 @@ groupID,categoryID,groupName,iconID,useBasePrice,anchored,anchorable,fittableNon
 1308,7,Rig Anchor,None,0,0,0,0,1
 1309,9,Tactical Destroyer Blueprint,None,1,0,0,0,1
 1310,11,Drifter Battleship,None,0,0,0,0,1
+1311,5,,None,0,0,0,0,1
 1312,22,Observatory Structures,None,0,0,0,0,1
 1313,7,Entosis Link,None,0,0,0,0,1
 1314,17,Unknown Components,0,1,0,0,0,1
@@ -1355,6 +1356,11 @@ groupID,categoryID,groupName,iconID,useBasePrice,anchored,anchorable,fittableNon
 2002,17,Triglavian Datastreams,None,0,0,0,0,1
 2003,7,,None,0,0,0,0,0
 2004,7,,None,0,0,0,0,0
+2005,22,,None,0,0,0,0,1
+2006,25,,None,0,0,0,0,0
+2008,7,,97,0,0,0,0,1
+2009,11,,0,0,1,0,0,0
+2010,9,,0,1,0,0,0,1
 350858,350001,Infantry Weapons,None,1,0,0,0,0
 351064,350001,Infantry Dropsuits,None,1,0,0,0,0
 351121,350001,Infantry Modules,None,1,0,0,0,0
