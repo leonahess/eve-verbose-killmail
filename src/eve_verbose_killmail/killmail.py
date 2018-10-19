@@ -2,10 +2,10 @@ from logging import getLogger
 from queue import Queue
 from threading import Thread
 
-from .name_fetcher_final_blow import NameFetcherFinalBlow
-from .name_fetcher_geographic import NameFetcherGeographic
-from .name_fetcher_victim import NameFetcherVictim
-from .name_fetcher_attacker import NameFetcherAttacker
+from eve_verbose_killmail.name_fetcher_final_blow import NameFetcherFinalBlow
+from eve_verbose_killmail.name_fetcher_geographic import NameFetcherGeographic
+from eve_verbose_killmail.name_fetcher_victim import NameFetcherVictim
+from eve_verbose_killmail.name_fetcher_attacker import NameFetcherAttacker
 
 
 class Killmail:

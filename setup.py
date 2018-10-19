@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='eve-verbose-killmail',
-    version='0.1_dev2',
+    version='0.1_dev3',
     packages=['eve_verbose_killmail'],
     package_dir={'eve_verbose_killmail': 'src/eve_verbose_killmail'},
     package_data={'eve_verbose_killmail': ['ressources/*.csv']},

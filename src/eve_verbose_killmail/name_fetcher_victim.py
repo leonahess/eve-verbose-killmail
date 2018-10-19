@@ -1,4 +1,4 @@
-from .name_fetcher import NameFetcher
+from eve_verbose_killmail.name_fetcher import NameFetcher
 
 
 class NameFetcherVictim(NameFetcher):

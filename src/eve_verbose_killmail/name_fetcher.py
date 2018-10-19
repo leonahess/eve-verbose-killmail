@@ -2,7 +2,7 @@ import threading
 import logging
 import os
 import csv
-from .esi_call import EsiCall
+from eve_verbose_killmail.esi_call import EsiCall
 
 
 class NameFetcher(threading.Thread):
