@@ -9,9 +9,10 @@ setup(
     license=open('LICENSE').read(),
     long_description=open('README.md').read(),
     author='Leon Hess',
-    author_email='',
-    url='',
+    author_email='leon.hess@mailbox.tu-dresden.d',
+    url='https://github.com/leonhess/eve-verbose-killmail',
     install_requires=[
         'requests'
     ],
+    download_url='https://github.com/leonhess/eve-verbose-killmail/releases/download/v0.1/eve-verbose-killmail-0.1.tar.gz'
 )

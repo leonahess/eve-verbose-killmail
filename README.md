@@ -5,7 +5,14 @@
 
 ### Installation:
 
-Clone the repository and then run:
+Install with pip:
+
+````
+pip3 install eve-verbose-killmail
+````
+
+Or for installing from source, clone the repository and then run:
+
 ````
 python3 setup.py sdist
 pip3 install dist/package_name.tar.gz
