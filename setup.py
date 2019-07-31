@@ -14,5 +14,5 @@ setup(
     install_requires=[
         'requests'
     ],
-    download_url='https://github.com/leonhess/eve-verbose-killmail/releases/download/v0.1.2/eve-verbose-killmail-0.1.2.tar.gz'
+    download_url='https://github.com/leonhess/eve-verbose-killmail/archive/v0.1.2.tar.gz'
 )
