@@ -29,7 +29,7 @@ class NameFetcher(threading.Thread):
         self.logger.debug("trying to read invGroups.csv")
 
         filepath = os.path.dirname(__file__) + "/ressources/invGroups.csv"
-        with open(filepath, newline='') as f:
+        with open(filepath, newline='', encoding='utf-8') as f:
             inv_types = csv.reader(f)
             for row in inv_types:
                 for l in range(0, len(group_id_list)):
@@ -53,7 +53,7 @@ class NameFetcher(threading.Thread):
         self.logger.debug("trying to read invTypes.csv")
 
         filepath = os.path.dirname(__file__) + "/ressources/invTypes.csv"
-        with open(filepath, newline='') as f:
+        with open(filepath, newline='', encoding='utf-8') as f:
             inv_types = csv.reader(f)
             for row in inv_types:
                 for l in range(0, len(ship_id_list)):
@@ -85,7 +85,7 @@ class NameFetcher(threading.Thread):
         self.logger.debug("trying to read mapSolarSystems.csv")
 
         filepath = os.path.dirname(__file__) + "/ressources/mapSolarSystems.csv"
-        with open(filepath, newline='') as f:
+        with open(filepath, newline='', encoding='utf-8') as f:
             inv_types = csv.reader(f)
             for row in inv_types:
                 for l in range(0, len(solar_system_id_list)):

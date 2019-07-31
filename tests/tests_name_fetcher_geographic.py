@@ -1,5 +1,5 @@
 from tests.setup import Setup
-from name_fetcher_geographic import NameFetcherGeographic
+from src.eve_verbose_killmail.name_fetcher_geographic import NameFetcherGeographic
 
 import sys
 

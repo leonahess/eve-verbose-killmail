@@ -327,3 +327,73 @@ class Setup(unittest.TestCase):
                             }
                     }
             }
+
+        self.uk99 = \
+            {
+                'package':
+                    {
+                        'killID': 78141788,
+                        'killmail':
+                            {
+                                'attackers':
+                                    [{
+                                        'character_id': 1312548849,
+                                        'corporation_id': 1000009,
+                                        'damage_done': 461,
+                                        'final_blow': True,
+                                        'security_status': 0.3,
+                                        'ship_type_id': 49710,
+                                        'weapon_type_id': 47915
+                                    },
+                                    {
+                                        'character_id': 96785777,
+                                        'corporation_id': 98605030,
+                                        'damage_done': 0,
+                                        'final_blow': False,
+                                        'security_status': 4.8,
+                                        'ship_type_id': 35683,
+                                        'weapon_type_id': 19806
+                                    },
+                                    {
+                                        'alliance_id': 99009279,
+                                        'character_id': 96582280,
+                                        'corporation_id': 98520515,
+                                        'damage_done': 0,
+                                        'final_blow': False,
+                                        'security_status': -2.5,
+                                        'ship_type_id': 29990,
+                                        'weapon_type_id': 15889
+                                    }],
+                                'killmail_id': 78141788,
+                                'killmail_time': '2019-07-31T18:17:44Z',
+                                'solar_system_id': 30004759,
+                                'victim':
+                                    {
+                                        'alliance_id': 99004425,
+                                        'character_id': 96501929,
+                                        'corporation_id': 1765089512,
+                                        'damage_taken': 461,
+                                        'items': [],
+                                        'position':
+                                            {
+                                                'x': 5096709601888.194,
+                                                'y': -2641212328751.0195,
+                                                'z': 4144289825779.7705
+                                            },
+                                        'ship_type_id': 670
+                                    }
+                            },
+                        'zkb':
+                            {
+                                'locationID': 50010993,
+                                'hash': '4aded6bd6913ff6130b36255436dfd2c4b41325e',
+                                'fittedValue': 10000,
+                                'totalValue': 10000,
+                                'points': 1,
+                                'npc': False,
+                                'solo': False,
+                                'awox': False,
+                                'href': 'https://esi.evetech.net/v1/killmails/78141788/4aded6bd6913ff6130b36255436dfd2c4b41325e/'
+                            }
+                    }
+            }

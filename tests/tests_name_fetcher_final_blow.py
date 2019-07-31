@@ -1,5 +1,5 @@
 from tests.setup import Setup
-from name_fetcher_final_blow import NameFetcherFinalBlow
+from src.eve_verbose_killmail.name_fetcher_final_blow import NameFetcherFinalBlow
 
 import sys
 

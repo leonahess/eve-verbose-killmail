@@ -19,7 +19,7 @@ class Killmail:
         self.logger = getLogger(__name__)
 
         self.unprocessed_killmail = unprocessed_killmail
-        self.logger.debug(unprocessed_killmail)
+        self.logger.debug("unprocessed killmail: {}".format(unprocessed_killmail))
 
         # O B J E C T S
         name_fetcher_final_blow_object = NameFetcherFinalBlow(unprocessed_killmail)

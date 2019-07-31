@@ -1,9 +1,10 @@
-from killmail import Killmail
+from src.eve_verbose_killmail.killmail import Killmail
 from tests.setup import Setup
 
 import sys
 
 sys.path.append('../src')
+
 
 class TestKillmail(Setup):
 
@@ -14,6 +15,7 @@ class TestKillmail(Setup):
         self.k70 = Killmail(self.uk70)
         self.k71 = Killmail(self.uk71)
         self.k72 = Killmail(self.uk72)
+        self.k99 = Killmail(self.uk99)
 
     def test_id(self):
         self.assertEqual(71443648, self.k00.id, "Wrong id")
@@ -21,6 +23,7 @@ class TestKillmail(Setup):
         self.assertEqual(72012818, self.k70.id, "wrong id")
         self.assertEqual(72477866, self.k71.id, "wrong id")
         self.assertEqual(72478369, self.k72.id, "wrong id")
+        self.assertEqual(78141788, self.k99.id, "wrong id")
 
     def test_time(self):
         self.assertEqual("2018-07-24T17:56:14Z", self.k00.time, "wrong time")
@@ -28,6 +31,7 @@ class TestKillmail(Setup):
         self.assertEqual("2018-08-22T10:41:01Z", self.k70.time, "wronge time")
         self.assertEqual("2018-09-18T12:00:28Z", self.k71.time, "wronge time")
         self.assertEqual("2018-09-18T13:01:24Z", self.k72.time, "wronge time")
+        self.assertEqual("2019-07-31T18:17:44Z", self.k99.time, "wrong time")
 
 
 class TestKillmailValue(TestKillmail):
@@ -38,6 +42,7 @@ class TestKillmailValue(TestKillmail):
         self.assertEqual(71262264.86, self.k70.value_total, "wrong isk amount")
         self.assertEqual(614449.97, self.k71.value_total, "wrong isk amount")
         self.assertEqual(50309060.11, self.k72.value_total, "wrong isk amount")
+        self.assertEqual(10000, self.k99.value_total, "wrong isk amount")
 
     def test_fitted_value(self):
         self.assertEqual(2543013.41, self.k00.value_fitted, "Wrong ISK Amount")
@@ -45,6 +50,7 @@ class TestKillmailValue(TestKillmail):
         self.assertEqual(10593294.36, self.k70.value_fitted, "wrong isk amount")
         self.assertEqual(328402.77, self.k71.value_fitted, "wrong isk amount")
         self.assertEqual(37301202.41, self.k72.value_fitted, "wrong isk amount")
+        self.assertEqual(10000, self.k99.value_fitted, "wrong isk amount")
 
     def test_ship_value(self):
         self.assertEqual(7521431.46 - 2543013.41, self.k00.value_ship, "Wrong ISK Amount")
@@ -52,6 +58,7 @@ class TestKillmailValue(TestKillmail):
         self.assertEqual(71262264.86 - 10593294.36, self.k70.value_ship, "wrong isk amount")
         self.assertEqual(614449.97 - 328402.77, self.k71.value_ship, "wrong isk amount")
         self.assertEqual(50309060.11 - 37301202.41, self.k72.value_ship, "wrong isk amount")
+        self.assertEqual(0, self.k99.value_ship, "wrong isk amount")
 
 
 class TestKillmailFinalBlow(TestKillmail):

@@ -3,3 +3,5 @@ build
 MANIFEST
 *__pycache__
 .idea
+venv
+venv1

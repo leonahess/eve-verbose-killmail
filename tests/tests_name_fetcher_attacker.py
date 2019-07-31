@@ -1,12 +1,12 @@
-from tests.setup import Setup
-from name_fetcher_attacker import NameFetcherAttacker
+import tests.setup
+from src.eve_verbose_killmail.name_fetcher_attacker import NameFetcherAttacker
 
 import sys
 
 sys.path.append('../src')
 
 
-class TestNameFetcherAttacker (Setup):
+class TestNameFetcherAttacker (tests.setup.Setup):
 
     def setUp(self):
         super().setUp()
@@ -41,7 +41,7 @@ class TestNameFetcherAttacker (Setup):
 
     def test_attacker_corp_names(self):
         self.assertEqual(";NED-Clan;", self.k00.attacker_corp_names, "wrong name")
-        self.assertEqual(";The Reappropriation Committee;HC - georgieboys;", self.k30.attacker_corp_names, "wrong name")
+        self.assertEqual(";HC - georgieboys;The Reappropriation Committee;", self.k30.attacker_corp_names, "wrong name")
         self.assertEqual(";Voracious Vikings of Valor;Old Rotten Tomatoes;", self.k70.attacker_corp_names, "wrong name")
 
     def test_attacker_alliance_names(self):
