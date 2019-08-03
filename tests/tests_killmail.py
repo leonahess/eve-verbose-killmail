@@ -251,26 +251,31 @@ class TestKillmailAttacker(TestKillmail):
         self.assertEqual(True, self.k00.attacker_is_solo, "wrong bool")
         self.assertEqual(False, self.k30.attacker_is_solo, "wrong bool")
         self.assertEqual(False, self.k70.attacker_is_solo, "wrong bool")
+        self.assertEqual(False, self.k99.attacker_is_solo, "wrong bool")
 
     def test_attacker_is_npc(self):
         self.assertEqual(False, self.k00.attacker_is_npc, "wrong bool")
         self.assertEqual(False, self.k30.attacker_is_npc, "wrong bool")
         self.assertEqual(False, self.k70.attacker_is_npc, "wrong bool")
+        self.assertEqual(False, self.k99.attacker_is_solo, "wrong bool")
 
     def test_attacker_is_awox(self):
         self.assertEqual(False, self.k00.attacker_is_awox, "wrong  bool")
         self.assertEqual(False, self.k30.attacker_is_awox, "wrong  bool")
         self.assertEqual(False, self.k70.attacker_is_awox, "wrong  bool")
+        self.assertEqual(False, self.k99.attacker_is_awox, "wrong bool")
 
     def test_attacker_amount(self):
         self.assertEqual(1, self.k00.attacker_amount, "wrong int")
         self.assertEqual(2, self.k30.attacker_amount, "wrong int")
         self.assertEqual(2, self.k70.attacker_amount, "wrong int")
+        self.assertEqual(3, self.k99.attacker_amount, "wrong int")
 
     def test_attacker_char_names(self):
         self.assertEqual(";Strife Senior;", self.k00.attacker_char_names, "wrong name")
-        self.assertEqual(";Shotgun Pimp;Ailiece Ardua;", self.k30.attacker_char_names, "wron name")
-        self.assertEqual(";VorSunder Vampyra;Jagreen Doshu;", self.k70.attacker_char_names, "wron name")
+        self.assertEqual(";Shotgun Pimp;Ailiece Ardua;", self.k30.attacker_char_names, "wrong name")
+        self.assertEqual(";VorSunder Vampyra;Jagreen Doshu;", self.k70.attacker_char_names, "wrong name")
+        self.assertEqual(";K Vicemen;Headhunter JAX;Yves TheNephew;", self.k99.attacker_char_names, "wrong name")
 
     def test_attacker_corp_names(self):
         self.assertEqual(";NED-Clan;", self.k00.attacker_corp_names, "wrong name")
@@ -290,7 +295,8 @@ class TestKillmailAttacker(TestKillmail):
     def test_attacker_ship_names(self):
         self.assertEqual(";Heron;", self.k00.attacker_ship_names, "wrong names")
         self.assertEqual(";Loki;", self.k30.attacker_ship_names, "wrong names")
-        self.assertEqual(";Sabre;Stratios;", self.k70.attacker_ship_names, "wrong names")
+        self.assertEqual(";Stratios;Sabre;", self.k70.attacker_ship_names, "wrong names")
+        self.assertEqual(";Loki;Kikimora;Hecate;", self.k99.attacker_ship_names, "wrong names")
 
     def test_attacker_ship_group_ids(self):
         self.assertEqual(["25"], self.k00.attacker_ship_group_ids, "wrong ids")
